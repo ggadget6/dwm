@@ -74,8 +74,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
 const char *mutecmd[] = { "amixer", "-q", "set", "Master", "toggle", NULL };
-const char *upcmd[] = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
-const char *downcmd[] = { "amixer", "-q", "set", "Master", "5%-", "unmute", NULL };
+const char *volupcmd[] = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
+const char *voldowncmd[] = { "amixer", "-q", "set", "Master", "5%-", "unmute", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
